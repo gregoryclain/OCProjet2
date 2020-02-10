@@ -1,0 +1,39 @@
+body {
+    color: #404040;
+}
+body a {
+    color: #404040;
+}
+body .container-fluid {
+    border: 2px inset rgba(0, 0, 0, .1);
+    -webkit-background-clip: padding-box;
+    padding-left: 0;
+}
+
+aside {
+    background-color: #FECA07;
+    height:100%
+}
+aside img {
+    border: 5px solid rgba(70, 70, 70, 0.1);
+    -webkit-background-clip: padding-box;
+    max-height:200px;
+
+}
+
+aside h3 {
+    background-color: #404040;
+    color:#FECA07;
+    text-transform:uppercase;
+    padding: 10px 0;
+}
+aside section:nth-child(2){
+    font-weight: 500;
+}
+aside li {
+    list-style: none;
+    
+}
+aside a {
+    text-decoration: none;
+}
