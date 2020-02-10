@@ -4,7 +4,7 @@ body {
 body a {
     color: #404040;
 }
-body .container-fluid {
+body .container {
     border: 2px inset rgba(0, 0, 0, .1);
     -webkit-background-clip: padding-box;
     padding-left: 0;
@@ -12,13 +12,12 @@ body .container-fluid {
 
 aside {
     background-color: #FECA07;
-    height:100%
+    height:100%;
+    /* font-size: 1.1em; */
 }
 aside img {
     border: 5px solid rgba(70, 70, 70, 0.1);
-    -webkit-background-clip: padding-box;
-    max-height:200px;
-
+    max-height:220px;
 }
 
 aside h3 {
@@ -30,10 +29,48 @@ aside h3 {
 aside section:nth-child(2){
     font-weight: 500;
 }
+
 aside li {
     list-style: none;
     
 }
 aside a {
     text-decoration: none;
+}
+
+main section li:first-child {
+    list-style: circle;
+}
+
+h1{
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-size: 3.4em;
+}
+h1 em {
+   
+    font-style: normal;
+    color: #FECA07;
+    font-weight:500;
+}
+
+h2 span { 
+    border-bottom: 2px solid #FECA07;
+}
+
+main h4 {
+    font-size: 1.2em;
+}
+main h5 {
+    font-size: 1em;
+}
+
+main article p:first-child{
+    font-weight: 500;
+    
+}
+footer h2,
+main h2  {
+    border-bottom: 2px solid #FECA07;
+    text-transform: uppercase;
 }
