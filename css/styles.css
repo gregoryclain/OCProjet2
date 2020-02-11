@@ -1,7 +1,6 @@
+@import url("https://use.fontawesome.com/releases/v5.8.1/css/all.css");
+body a,
 body {
-    color: #404040;
-}
-body a {
     color: #404040;
 }
 body .container {
@@ -13,7 +12,6 @@ body .container {
 aside {
     background-color: #FECA07;
     height:100%;
-    /* font-size: 1.1em; */
 }
 aside img {
     border: 5px solid rgba(70, 70, 70, 0.1);
@@ -31,16 +29,49 @@ aside section:nth-child(2){
 }
 
 aside li {
-    list-style: none;
-    
+    list-style: none; 
 }
 aside a {
     text-decoration: none;
 }
 
-main section li:first-child {
-    list-style: circle;
+footer > h2 > i,
+main li::before,
+main > section > h2 > i {
+    color:#FECA07 ;
 }
+
+
+main section li {
+    list-style: none;
+}
+main li::before {
+  content: '\2022';
+  display: block;
+  position: relative;
+  max-width: 0;
+  max-height: 0;
+  left: -28px;
+  top: -15px;
+  color: #FECA07;
+  font-size: 40px; 
+}
+
+main section li:first-child::before {
+    font-size:1em;
+    margin:0;
+    display: inline-block;
+    vertical-align: middle;
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    content: "\f192";
+}
+
+main section li:first-child article {
+    margin-top:-2em;
+}
+
+
 
 h1{
     text-transform: uppercase;
@@ -48,7 +79,6 @@ h1{
     font-size: 3.4em;
 }
 h1 em {
-   
     font-style: normal;
     color: #FECA07;
     font-weight:500;
@@ -73,4 +103,38 @@ footer h2,
 main h2  {
     border-bottom: 2px solid #FECA07;
     text-transform: uppercase;
+}
+
+@media screen and (max-width: 991px) 
+{
+    aside .img-fluid 
+    {
+        max-width: 75%;
+    }
+}
+
+@media screen and (max-width: 500px) 
+{
+    footer h2,
+    main h2 
+    {
+        color: red;
+        font-size:1.1em;
+    }
+    footer .row,
+    header {
+        text-align: center;
+    }
+    header h2 {
+        font-size:1.1em;
+    }
+}
+
+
+@media screen and (max-width: 768px) 
+{
+    .container .row
+    {
+        margin-left:0;
+    }
 }
