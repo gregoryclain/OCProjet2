@@ -1,50 +1,77 @@
 @import url("https://use.fontawesome.com/releases/v5.8.1/css/all.css");
+/* line 4, css/styles.scss */
+/* line 3, css/styles.css */
 body a,
 body {
-    color: #404040;
-}
+  color: #404040; }
+
+/* line 7, css/styles.scss */
+/* line 7, css/styles.css */
+body a .container,
 body .container {
-    border: 2px inset rgba(0, 0, 0, .1);
-    -webkit-background-clip: padding-box;
-    padding-left: 0;
-}
+  border: 2px inset rgba(0, 0, 0, 0.1);
+  padding-left: 0; }
 
+/* line 14, css/styles.scss */
+/* line 13, css/styles.css */
 aside {
-    background-color: #FECA07;
-    height:100%;
-}
+  background-color: #FECA07;
+  height: 100%; }
+
+/* line 17, css/styles.scss */
+/* line 17, css/styles.css */
 aside img {
-    border: 5px solid rgba(70, 70, 70, 0.1);
-    max-height:220px;
-}
+  border: 5px solid rgba(70, 70, 70, 0.1);
+  max-height: 220px; }
 
+/* line 21, css/styles.scss */
+/* line 21, css/styles.css */
 aside h3 {
-    background-color: #404040;
-    color:#FECA07;
-    text-transform:uppercase;
-    padding: 10px 0;
-}
-aside section:nth-child(2){
-    font-weight: 500;
-}
+  background-color: #404040;
+  color: #FECA07;
+  text-transform: uppercase;
+  padding: 10px 0; }
 
+/* line 27, css/styles.scss */
+/* line 27, css/styles.css */
+aside section:nth-child(2) {
+  font-weight: 500; }
+
+/* line 30, css/styles.scss */
+/* line 30, css/styles.css */
 aside li {
-    list-style: none; 
-}
-aside a {
-    text-decoration: none;
-}
+  list-style: none; }
 
+/* line 33, css/styles.scss */
+/* line 33, css/styles.css */
+aside a {
+  text-decoration: none; }
+
+/* line 38, css/styles.scss */
+/* line 37, css/styles.css */
 footer > h2 > i,
 main li::before,
 main > section > h2 > i {
-    color:#FECA07 ;
-}
+  color: #FECA07; }
 
+/* line 45, css/styles.scss */
+/* line 43, css/styles.css */
+main h2 {
+  border-bottom: 2px solid #FECA07;
+  text-transform: uppercase; }
 
-main section li {
-    list-style: none;
-}
+/* line 50, css/styles.scss */
+/* line 48, css/styles.css */
+main h4 {
+  font-size: 1.2em; }
+
+/* line 54, css/styles.scss */
+/* line 52, css/styles.css */
+main h5 {
+  font-size: 1em; }
+
+/* line 59, css/styles.scss */
+/* line 56, css/styles.css */
 main li::before {
   content: '\2022';
   display: block;
@@ -54,87 +81,106 @@ main li::before {
   left: -28px;
   top: -15px;
   color: #FECA07;
-  font-size: 40px; 
-}
+  font-size: 40px; }
 
-main section li:first-child::before {
-    font-size:1em;
-    margin:0;
-    display: inline-block;
-    vertical-align: middle;
-    font-family: "Font Awesome 5 Free"; 
-    font-weight: 900; 
-    content: "\f192";
-}
+/* line 73, css/styles.scss */
+/* line 68, css/styles.css */
+main section li {
+  list-style: none; }
 
+/* line 78, css/styles.scss */
+/* line 72, css/styles.css */
 main section li:first-child article {
-    margin-top:-2em;
-}
+  margin-top: -2em; }
 
+/* line 82, css/styles.scss */
+/* line 76, css/styles.css */
+main section li:first-child::before {
+  font-size: 1em;
+  margin: 0;
+  display: inline-block;
+  vertical-align: middle;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f192"; }
 
+/* line 94, css/styles.scss */
+/* line 86, css/styles.css */
+main article p:first-child {
+  font-weight: 500; }
 
-h1{
-    text-transform: uppercase;
-    font-weight: lighter;
-    font-size: 3.4em;
-}
+/* line 101, css/styles.scss */
+/* line 90, css/styles.css */
+h1 {
+  text-transform: uppercase;
+  font-weight: lighter;
+  font-size: 3.4em; }
+
+/* line 105, css/styles.scss */
+/* line 95, css/styles.css */
 h1 em {
-    font-style: normal;
-    color: #FECA07;
-    font-weight:500;
-}
+  font-style: normal;
+  color: #FECA07;
+  font-weight: 500; }
 
-h2 span { 
-    border-bottom: 2px solid #FECA07;
-}
+/* line 113, css/styles.scss */
+/* line 101, css/styles.css */
+h2 span {
+  border-bottom: 2px solid #FECA07; }
 
-main h4 {
-    font-size: 1.2em;
-}
-main h5 {
-    font-size: 1em;
-}
+/* line 117, css/styles.scss */
+/* line 105, css/styles.css */
+footer h2 {
+  border-bottom: 2px solid #FECA07;
+  text-transform: uppercase; }
 
-main article p:first-child{
-    font-weight: 500;
-    
-}
-footer h2,
-main h2  {
-    border-bottom: 2px solid #FECA07;
-    text-transform: uppercase;
-}
+@media only screen and (max-width: 991px) {
+  /* line 124, css/styles.scss */
+  /* line 111, css/styles.css */
+  aside .img-fluid {
+    max-width: 75%; } }
 
-@media screen and (max-width: 991px) 
-{
-    aside .img-fluid 
-    {
-        max-width: 75%;
-    }
-}
+@media only screen and (max-width: 500px) {
+  /* line 132, css/styles.scss */
+  /* line 116, css/styles.css */
+  footer h2,
+  main h2 {
+    color: red;
+    font-size: 1.1em; }
+  /* line 138, css/styles.scss */
+  /* line 121, css/styles.css */
+  footer .row,
+  header {
+    text-align: center; }
+  /* line 142, css/styles.scss */
+  /* line 125, css/styles.css */
+  footer .row h2,
+  header h2 {
+    font-size: 1.1em; } }
 
-@media screen and (max-width: 500px) 
-{
-    footer h2,
-    main h2 
-    {
-        color: red;
-        font-size:1.1em;
-    }
-    footer .row,
-    header {
-        text-align: center;
-    }
-    header h2 {
-        font-size:1.1em;
-    }
-}
+@media only screen and (max-width: 768px) {
+  /* line 152, css/styles.scss */
+  /* line 131, css/styles.css */
+  .container .row {
+    margin-left: 0; } }
 
-
-@media screen and (max-width: 768px) 
-{
-    .container .row
-    {
-        margin-left:0;
-    }
-}
+@media only print {
+  @page {
+    size: 330mm 427mm;
+    margin: 14mm; }
+  /* line 165, css/styles.scss */
+  /* line 139, css/styles.css */
+  .container {
+    width: 1200px; }
+  /* line 168, css/styles.scss */
+  /* line 142, css/styles.css */
+  .container .container-aside {
+    max-width: 35%; }
+  /* line 170, css/styles.scss */
+  /* line 145, css/styles.css */
+  .container .container-aside i {
+    font-size: 2em; }
+  /* line 174, css/styles.scss */
+  /* line 148, css/styles.css */
+  .container .container-main {
+    max-width: 65%; } }

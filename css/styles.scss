@@ -1,0 +1,178 @@
+@import url("https://use.fontawesome.com/releases/v5.8.1/css/all.css");
+$base-color: #FECA07;
+
+body a,
+body {
+    color: #404040;
+    .container {
+        border: 2px inset rgba(0, 0, 0, .1);
+        padding-left: 0;
+    }
+}
+
+
+aside {
+    background-color: $base-color;
+    height:100%;
+    img {
+        border: 5px solid rgba(70, 70, 70, 0.1);
+        max-height:220px;
+    }
+    h3 {
+        background-color: #404040;
+        color:$base-color;
+        text-transform:uppercase;
+        padding: 10px 0;
+    }
+    section:nth-child(2){
+        font-weight: 500;
+    }
+    li {
+        list-style: none; 
+    }
+    a {
+        text-decoration: none;
+    }
+}
+
+footer > h2 > i,
+main li::before,
+main > section > h2 > i {
+    color:$base-color ;
+}
+
+main {
+    h2  {
+        border-bottom: 2px solid $base-color;
+        text-transform: uppercase;
+    }
+
+    h4 {
+        font-size: 1.2em;
+    }
+
+    h5 {
+        font-size: 1em;
+    }
+
+    li {
+        &::before {
+            content: '\2022';
+            display: block;
+            position: relative;
+            max-width: 0;
+            max-height: 0;
+            left: -28px;
+            top: -15px;
+            color:$base-color;
+            font-size: 40px; 
+        }
+    }
+
+    section {
+        li {
+            list-style: none;
+        }
+
+        li:first-child {
+            article {
+                margin-top:-2em;
+            }
+
+            &::before {
+                font-size:1em;
+                margin:0;
+                display: inline-block;
+                vertical-align: middle;
+                font-family: "Font Awesome 5 Free"; 
+                font-weight: 900; 
+                content: "\f192";
+            }
+        }
+    }
+
+    article p:first-child{
+        font-weight: 500;
+        
+    }
+}
+
+
+h1{
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-size: 3.4em;
+    em {
+        font-style: normal;
+        color: $base-color;
+        font-weight:500;
+    }
+}
+
+
+h2 span { 
+    border-bottom: 2px solid $base-color;
+}
+
+footer h2 {
+    border-bottom: 2px solid $base-color;
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width: 991px) 
+{
+    aside .img-fluid 
+    {
+        max-width: 75%;
+    }
+}
+
+@media only screen and (max-width: 500px) 
+{
+    footer h2,
+    main h2 
+    {
+        color: red;
+        font-size:1.1em;
+    }
+    footer .row,
+    header {
+        text-align: center;
+
+        h2 {
+            font-size:1.1em;
+        }
+    }
+
+}
+
+
+@media only screen and (max-width: 768px) 
+{
+    .container .row
+    {
+        margin-left:0;
+    }
+}
+
+@media only print 
+{
+    @page 
+    {
+        size: 330mm 427mm;
+        margin: 14mm;
+    }
+    .container {
+        width: 1200px;
+
+        .container-aside {
+            max-width: 35%;
+            i {
+                font-size:2em;
+            }
+        }
+        .container-main {
+            max-width: 65%;
+        }        
+    }
+}
