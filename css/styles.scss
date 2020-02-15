@@ -1,5 +1,5 @@
 @import url("https://use.fontawesome.com/releases/v5.8.1/css/all.css");
-$base-color: #FECA07;
+$base-color: #80DEEA;
 
 body a,
 body {
@@ -17,6 +17,9 @@ aside {
     img {
         border: 5px solid rgba(70, 70, 70, 0.1);
         max-height:220px;
+    }
+    .loisirs img {
+        border: 2px solid black;
     }
     h3 {
         background-color: #404040;
